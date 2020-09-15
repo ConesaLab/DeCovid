@@ -20,7 +20,7 @@ Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) can cause severe me
 
 ## How to Install and Run DeCovid
 
-There are two main options to run MirCure:
+There are two main options to run DeCovid:
 
 1.  Run DeCovid as *Docker image* 
 2.  Directly download and run DeCovid as *shiny app*.
