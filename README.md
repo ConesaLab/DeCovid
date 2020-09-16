@@ -1,4 +1,4 @@
-# DeCovid: A tool for conducting a Wide-spread transcriptional analysis for COVID-19 Disease Map genes between males and females.
+# DeCovid: A tool for conducting a Wide-spread transcriptional analysis for COVID-19 Disease Map genes
 
 - Tianyuan Liu
 - Ana Lleo
