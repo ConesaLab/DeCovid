@@ -6,7 +6,7 @@
 - Ana Conesa
 
 ### About DeCovid
-This app provides information on gene expression differences between man and women and old versus young individuals for genes in the COVID19 Disease Map. Gene expression data was obtained from the GTEx project, that collects expression data for multiple human tissues.
+This app provides information on gene expression differences between man and women and old versus young individuals for genes in the COVID-19 Disease Map. Gene expression data was obtained from the GTEx project, that collects expression data for multiple human tissues.
 - You can select tissue of interest, companions type (man vs female or young vs old), a p.value and logFC of differential expression to identify regulated COVID-19 genes.
 - Also, you can simply introduce a gene name to see the expressions data across these population groups.
 - Finally, you can implement a GO term enrichment analysis for the DE genes.
