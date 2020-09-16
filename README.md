@@ -16,7 +16,7 @@ This app provides information on gene expression differences between man and wom
 
 ## Introduction
 Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) can cause severe medical complication and lead patients to die. Based on current data, males have a higher risk than females, which means that males are more likely to die when they are diagnosed as cases. Based on the expression data from the Genotype-Tissue Expression (GTEx) project and genes related to COVID-19  in COVID-19 Disease Map, we wrote DeCovid,  a shiny app using edgeR R package to explore baseline gene expression difference and understand the sex bias.
-<img src="https://github.com/ConesaLab/DeCovid/blob/master/www/Idea.png">
+<img src="https://github.com/ConesaLab/DeCovid/blob/master/www/idea.png">
 
 ## How to Install and Run DeCovid
 
