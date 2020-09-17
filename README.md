@@ -28,7 +28,7 @@ There are two main options to run DeCovid:
 ### Run  DeCovid as Docker Image
 
 - install the [Docker engine](https://docs.docker.com/engine/install/).
-- Run DeCovid with the following command:
+- Run DeCovid with the following command in terminal (Mac/Linux) or PowerShell (Win):
 ```
 docker run --rm -p 3838:3838 tianyuanliu/explore_covid-19_disease_genes
 ```
