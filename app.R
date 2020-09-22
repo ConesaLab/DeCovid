@@ -41,6 +41,7 @@ server <- function(input, output, session){
   values <- reactiveValues()
   
   values$successStep1<-FALSE
+  values$successStep2<-FALSE
  
   observeEvent(input$run, {
     
@@ -222,9 +223,9 @@ server <- function(input, output, session){
             
         fittedValuesRaw <<- DE.genes.Normal$fitted.values
             
-        DE.genes.set <- DE.genes.normal.list_p[abs(DE.genes.normal.list_p$logFC) > LogFC,]
+        DE.genes.set <<- DE.genes.normal.list_p[abs(DE.genes.normal.list_p$logFC) > LogFC,]
         
-        if (nrow(DE.genes.set) == 0) {
+        if (nrow(DE.genes.set) < 2) {
           return(FALSE)
         } else {
           fittedValues <- DE.genes.Normal$fitted.values[rownames(DE.genes.set),]
@@ -482,7 +483,7 @@ server <- function(input, output, session){
 
                 
       ## numbers as data on x axis
-      go_enrich_df$number <<- factor(rev(1:nrow(go_enrich_df)))
+      go_enrich_df$number <- factor(rev(1:nrow(go_enrich_df)))
       ## shorten the names of GO terms
       shorten_names <- function(x, n_word=4, n_char=40){
         if (length(strsplit(x, " ")[[1]]) > n_word || (nchar(x) > 40))
@@ -597,7 +598,7 @@ This app provides information on gene expression differences between man and wom
                               hr(),
                               h3("Step 3: GO term Enrichment Analysis"),
                               h5("*In this step, you can perform a GO enrichment analysis for DE genes found in step1 under the COVID-19 Diseases Map genes background!"),
-                              textInput("PValue2", "P-value"),
+                              textInput("PValue2", "P-value",value = "0.1"),
                               radioButtons("factor2", "select the gene size you want to analysis", choices = c("All DE genes", "DE genes expressed more in males", "DE genes expressed more in females")),
                               actionButton("EnrichmentAnalysis", "3-GO enrichment analysis")
                               
@@ -621,6 +622,15 @@ This app provides information on gene expression differences between man and wom
 
 
 shinyApp(ui = ui, server = server)
+
+
+
+
+
+
+
+
+
 
 
 
