@@ -22,6 +22,7 @@ Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) can cause severe me
 There are two main **Datasets** integrated with DeCovid:
 - RNA-seq data: Genotype-Tissue Expression project (GTEx) (Lonsdale *et al.,* 2013).
 - COVID-19 Disease Map: A list of genes mined 9996 PMC papers in COVID-19 Open Research Dataset (CORD-19) using machine learning approaches(Lu Wang *et al.,* 2020).
+
 The **DeCovid software** is a Shiny app written in R with a user-friendly interface. DeCovid already has integrated all essential data from GTEx, and no additional downloads are necessary. Differential gene expression is calculated using edgeR (Robinson *et al.,* 2010), and multiple testing correction is applied following the Benjamini and Hochberg（BH）method (Benjamini and Hochberg, 1995). Results are provided either as lists of differentially expressed genes, heatmaps of sex and age mean expression values, and gene-specific boxplots showing the distribution of expression values across demographic groups. GO enrichment analysis of significant gene sets is provided through the cluster profile R package and uses the COVID-19 disease map list as a reference set (Yu et al., 2012).
 
 
