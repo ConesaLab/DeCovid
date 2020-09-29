@@ -39,6 +39,7 @@ There are two main options to run DeCovid:
 - Run DeCovid with the following command in terminal (Mac/Linux) or PowerShell (Win):
 ```
 docker run --rm -p 3838:3838 conesalab/decovid:decovid
+```
 - Open the URL shows in the terminal (typically [http://[::]:3838](http://[::]:3838)) in any **web browser**.
 
 ### Run  DeCovid as shiny app
