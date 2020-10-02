@@ -12,8 +12,7 @@ This app provides information on gene expression differences between man and wom
 - Finally, you can implement a GO term enrichment analysis for the DE genes.
 
 ## Video Tutorial
-[https://youtu.be/_sy4fdnQMyE![Watch the video](https://github.com/ConesaLab/DeCovid/blob/master/www/AA65B516-2B6A-463E-AEA5-2C9D7FD4C2D2.jpeg)]
-(https://youtu.be/aBwrSgVLSqQ)
+[![Watch the video](https://github.com/ConesaLab/DeCovid/blob/master/www/AA65B516-2B6A-463E-AEA5-2C9D7FD4C2D2.jpeg)](https://youtu.be/aBwrSgVLSqQ)
 
 ## Introduction
 Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) can cause severe medical complication and lead patients to die. Based on current data, males have a higher risk than females, which means that males are more likely to die when they are diagnosed as cases. Based on the expression data from the Genotype-Tissue Expression (GTEx) project and genes related to COVID-19  in COVID-19 Disease Map, we wrote DeCovid,  a shiny app using edgeR R package to explore baseline gene expression difference and understand the sex bias.
