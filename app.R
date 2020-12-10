@@ -602,6 +602,7 @@ server <- function(input, output, session){
       values_A <- reactiveValues()
       values_A$successStep1 <- FALSE
       values_A$successStep2 <- FALSE
+      
       observeEvent(input$addGroupInf, {
         
         controlGroup <<- input$controlGroup
@@ -655,8 +656,7 @@ server <- function(input, output, session){
         
         PValue <<- as.numeric(input$PValue_A)
         LogFC <<- as.numeric(input$LogFC_A)
-        gctFIle <- gctdf
-        
+
         showNotification("Success!", type = "message" )
         values_A$successStep1 <- TRUE
         
@@ -740,7 +740,8 @@ server <- function(input, output, session){
           
           #Pvalue <- 0.05
           #ageSelect <- "age>60"
-         
+          gctFIle <- gctdf
+          
           #gctFile <- gctFIle
           analysisGct_A <<- function(gctFile, gctFileTPM) {
             
@@ -1289,21 +1290,3 @@ This app provides information on gene expression differences between man and wom
 
 
 shinyApp(ui = ui, server = server)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
